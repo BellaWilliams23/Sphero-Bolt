@@ -15,18 +15,30 @@ async function startProgram() {
 }
 */
 
-
+/*
 async function startProgram() {
 
 	setMainLed({ r: 100, g: 55, b: 100 });
-	await speak("Hewo Bewa Boo", true);
+	await speak("Skibidi Alpha Sigma", true);
 	await delay(1);
 	for (var square = 0; square < 4; square++) {
 		setMainLed(getRandomColor());
-		await Sound.Game.Coin.play(true);
+		await Sound.Animal.Whale.play(true);
 		await roll((getHeading() + 90), 40, 3);
 		await delay(1);
 
 	}
 
+}
+*/
+
+
+async function startProgram() {
+	await roll(( getHeading() + 0), 60, 2);
+	await delay(1);
+	await roll(( getHeading() + 90), 60, 2);
+	await delay(1);
+	await roll((getHeading() - 180), 60, 2);
+	
+	
 }
