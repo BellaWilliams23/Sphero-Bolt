@@ -9,5 +9,7 @@ async function startProgram() {
 	setMainLed({ r: 255, g: 0, b: 0});
 	await speak("Booting maze scan, scan completed, starting course.", true)
 	await roll((getHeading() -180), 41, 2);
+	await delay(2);
+	await roll((getHeading() -90), 45, 2);
 	await delay(5);
 }
