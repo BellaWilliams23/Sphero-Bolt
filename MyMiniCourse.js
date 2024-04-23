@@ -6,5 +6,8 @@
 // Program URL: https://edu.sphero.com/program/16743344/edit
 
 async function startProgram() {
-	// Write code here
+	setMainLed({ r: 255, g: 0, b: 0});
+	await speak("Booting maze scan, scan completed, starting course.", true)
+	await roll((getHeading() -180), 41, 2);
+	await delay(5);
 }
