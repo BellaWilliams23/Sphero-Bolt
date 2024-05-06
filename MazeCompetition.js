@@ -6,7 +6,7 @@
 // Program URL: https://edu.sphero.com/program/16752511/editasync function startProgram() {
 	
 
- 
+
 async function startProgram() {
 
 	// Programmer: Bella Williams - Start Text & Audio Checkpoint Commit - Date: 4.30.24
@@ -14,20 +14,19 @@ async function startProgram() {
 	await scrollMatrixText('START', { r:66, g: 56, b: 255 }, 20 , true) ,
 
 	
-	
 	// Programmer: Hailey Terrini - Blue LED Checkpoint Commit - Date: 5.1.24
-	await roll((getHeading() -181), 68, 2.5);
+	await roll((getHeading() +0), 68, 2.1);
 	setMainLed({ r: 0, g: 0, b: 255});
 	await delay(2);
 
 
 	// Programmer: Bella Williams - Sound One Checkpoint Commit - Date: 5.2.24
-	await roll((getHeading() -270), 46, 2.5);
+	await roll((getHeading() +90), 46, 2.4);
 	await Sound.Animal.Sheep.play(true);
 	await delay(2);
 
 	// Programmer:        - Red LED Checkpoint Commit - Date:
-
+	await roll((getHeading() +90), 46, 1.8);
 
 
 	// Programmer          - Sound Two Checkpoint Commit - Date:
@@ -44,4 +43,5 @@ async function startProgram() {
 
 	// Programmer:        - Finish Text & Audio Checkpoint Commit - Date:
 
-} 
+
+	}
