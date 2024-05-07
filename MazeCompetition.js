@@ -1,11 +1,10 @@
 // Programmer: Bella
 // Team Member: Hailioso
 // Bolt ID: B2F8
-// Date: 5.2.2024
+// Date: 5.6.2024
 // Program: Obstacle Course
 // Program URL: https://edu.sphero.com/program/16752511/editasync function startProgram() {
 	
-
 
 async function startProgram() {
 
@@ -25,10 +24,12 @@ async function startProgram() {
 	await Sound.Animal.Sheep.play(true);
 	await delay(2);
 
-	// Programmer:        - Red LED Checkpoint Commit - Date:
+	// Programmer: Hailey Terrini - Red LED Checkpoint Commit - Date: 5.6.24
 	await roll((getHeading() +90), 46, 1.8);
-
-
+	await roll((getHeading() +43), 41, 1.8);
+	setMainLed({ r: 255, g: 0, b: 0});
+	await delay(2);
+	
 	// Programmer          - Sound Two Checkpoint Commit - Date:
 
 
